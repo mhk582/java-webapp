@@ -7,6 +7,11 @@ public class GreetingServlet extends HttpServlet {
             throws ServletException, IOException {
         response.setContentType("text/html");
         PrintWriter out = response.getWriter();
+        out.println("<html>");
+        out.println("<head><title>Greeting</title></head>");
+        out.println("<body>");
         out.println("<h1>Hello from GreetingServlet!</h1>");
+        out.println("</body>");
+        out.println("</html>");
     }
 }
